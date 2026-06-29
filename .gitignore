@@ -1,0 +1,40 @@
+# --- Secrets (NEVER commit) ---
+.env
+.env.*
+!.env.example
+*service_account*.json
+*client_secret*.json
+gcs_service_account.json
+veo_service_account.json
+*-*.json.key
+credentials.json
+*.pem
+env_backup*.txt
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+ENV/
+.pytest_cache/
+
+# --- Node ---
+node_modules/
+dist/
+build/
+*.local
+
+# --- Media / generated artifacts ---
+Exported/
+*_frames/
+curr_frames/
+prev_frames/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
