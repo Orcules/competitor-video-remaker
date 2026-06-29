@@ -1,0 +1,49 @@
+# Video Scene Processor Dependencies
+# ==================================
+
+# Google Sheets API
+gspread>=5.12.0
+google-auth>=2.25.0
+google-auth-oauthlib>=1.2.0
+
+# Google Cloud Storage (reference image uploads)
+google-cloud-storage>=2.14.0
+
+# Image processing
+Pillow>=10.0.0
+
+# AWS S3
+boto3>=1.34.0
+botocore>=1.34.0
+
+# OpenAI API
+openai>=1.12.0
+
+# Language detection (falls back to a character-set heuristic if absent)
+langdetect>=1.0.9
+
+# HTTP Requests
+requests>=2.31.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Utilities (usually built-in but for reference)
+# json, base64, tempfile, subprocess - built-in
+
+# Scene Detection (better than FFmpeg's basic scene filter)
+scenedetect>=0.6.4
+opencv-python>=4.8.0
+
+# Optional: for local testing
+# ffmpeg-python>=0.2.0  # Alternative to subprocess calls
+
+# optional: Gemini native video analysis (lazily imported; pipeline falls back without it)
+# google-generativeai>=0.8.0
+
+# Note: FFmpeg must be installed on the system separately
+# Install FFmpeg:
+#   - Windows: choco install ffmpeg OR download from https://ffmpeg.org/download.html
+#   - macOS: brew install ffmpeg
+#   - Linux: sudo apt install ffmpeg
+
